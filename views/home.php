@@ -6,6 +6,16 @@
     <title>php opp with </title>
 </head>
 <body>
+    
+    <ul>
+        <li><a href="web.php?page=home">Home</a></li>
+        <li><a href="web.php?page=about">About</a></li>
+        <li><a href="web.php?page=contact">Contact</a></li>
+        <li><a href="web.php?page=contact">portfolio</a></li>
+    </ul>
+
+<h1>This is home page</h1>
+  
     <table border = "1" width="700" style="border-collapse:collapse">
         <tr>
             <th>Name</th>

@@ -13,18 +13,18 @@ class HelloWorld {
         }
 
         public function index(){
-            $this->x= 10;
-            $this->y= 20;
-            $this->z =  $this->x  +  $this->y;
-            // echo $this->z;
-            $this->data = [10,20,30,40,"Rubel",false,22.332];
-            // echo $this->data[1];
+            // $this->x= 10;
+            // $this->y= 20;
+            // $this->z =  $this->x  +  $this->y;
+            // // echo $this->z;
+            // $this->data = [10,20,30,40,"Rubel",false,22.332];
+            // // echo $this->data[1];
 
-            foreach($this->data as $item){
+            // foreach($this->data as $item){
 
-               // echo $item ." ";
+            //    // echo $item ." ";
 
-            }
+            // }
 
             $this->students =[
                 0 => [
@@ -52,7 +52,23 @@ class HelloWorld {
             // }
          
           
-            $students = $this->students;
-            include "views/home.php";
+            // $students = $this->students;
+            // include "views/home.php";
+            // echo "<pre>";
+            // echo print_r($this->students);
+            return view("home",['students'=> $this->students]);
+            
          }
+         public function about(){
+            return view("about");
+         }
+         public function contact(){
+            return view('contact');
+         }
+         public function portfolio(){
+            return view('portfolio');
+        
+         }
+
+
 }

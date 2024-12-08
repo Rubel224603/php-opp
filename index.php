@@ -9,7 +9,7 @@
     // }
     // demo();
 
-
+ 
 
     // class Demo{
     //     public function test(){
@@ -22,6 +22,8 @@
 
     require_once "vendor/autoload.php";
     use App\classes\HelloWorld;
+
+    test();
 
     $helloWorld = new HelloWorld();
     $helloWorld->index();
